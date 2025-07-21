@@ -320,7 +320,12 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-primary-800 text-white section-padding">
+      <section
+        className="bg-gradient-to-r  text-white section-padding"
+        style={{
+          backgroundImage: "url('/images/tourism7.jpg')",
+        }}
+      >
         <div className="container-max text-center">
           <h2 className="text-4xl font-bold mb-4">
             Ready to Start Your Journey?
