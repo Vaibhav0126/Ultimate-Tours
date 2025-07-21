@@ -45,11 +45,21 @@ git push origin main
 3. Choose your **Ultimate Tours** repository
 4. Railway will automatically detect it's a Next.js app
 
-#### 3.3 Add MongoDB Database
+#### 3.3 Set Up MongoDB Database
 
-1. In your project dashboard, click **"Add Service"**
-2. Select **"Database"** → **"Add MongoDB"**
-3. Railway will automatically provide the `MONGODB_URI`
+Railway no longer offers MongoDB directly. Use MongoDB Atlas (free tier available):
+
+**Quick MongoDB Atlas Setup:**
+
+1. Go to [MongoDB Atlas](https://cloud.mongodb.com/)
+2. Create free account
+3. Create database cluster (M0 Sandbox - FREE)
+4. Create database user:
+   - Username: `ultimatetours`
+   - Password: Generate secure password
+5. Network Access → Add IP: `0.0.0.0/0` (Allow from anywhere)
+6. Connect → Connect your application
+7. Copy connection string: `mongodb+srv://ultimatetours:<password>@cluster0.abcd.mongodb.net/ultimate-tours`
 
 #### 3.4 Configure Environment Variables
 
@@ -58,6 +68,7 @@ git push origin main
 3. Add these environment variables:
 
 ```env
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/ultimate-tours
 JWT_SECRET=your-super-secret-jwt-key-minimum-32-characters
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASS=your-gmail-app-password
@@ -68,7 +79,7 @@ ADMIN_PASSWORD=your-secure-admin-password
 NODE_ENV=production
 ```
 
-**Note**: `MONGODB_URI` is automatically provided by Railway's MongoDB service.
+**Note**: You'll need to add `MONGODB_URI` manually from MongoDB Atlas.
 
 #### 3.5 Deploy!
 
@@ -90,8 +101,11 @@ NODE_ENV=production
 
 ### Auto-Provided by Railway:
 
-- `MONGODB_URI` - Database connection (automatic)
 - `PORT` - Application port (automatic)
+
+### You Need to Add:
+
+- `MONGODB_URI` - From MongoDB Atlas
 
 ## 📧 Email Setup (Gmail)
 
@@ -158,9 +172,9 @@ npm run seed
 
 **Database Connection:**
 
-- Verify MongoDB service is running
-- Check if MONGODB_URI is auto-provided
-- Restart services if needed
+- Verify MongoDB Atlas connection string
+- Check if MONGODB_URI is correctly set in Railway
+- Ensure Atlas IP whitelist includes `0.0.0.0/0`
 
 **Environment Variables:**
 
