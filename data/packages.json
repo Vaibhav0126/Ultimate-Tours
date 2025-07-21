@@ -1,0 +1,334 @@
+{
+  "local": [
+    {
+      "id": "local-1",
+      "title": "Kerala Backwaters",
+      "location": "Kochi • Munnar • Alleppey",
+      "duration": "5 Days / 4 Nights",
+      "price": 599,
+      "originalPrice": 799,
+      "rating": 4.6,
+      "reviews": 198,
+      "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "description": "Experience the serene backwaters of Kerala with houseboat stays, tea plantation visits, and authentic local cuisine.",
+      "features": [
+        "Houseboat Stay",
+        "Tea Plantations",
+        "Ayurvedic Spa",
+        "Local Cuisine",
+        "Airport Transfers",
+        "Professional Guide"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Kochi",
+          "description": "Arrive at Kochi airport, check into hotel, and explore Fort Kochi in the evening."
+        },
+        {
+          "day": 2,
+          "title": "Kochi to Munnar",
+          "description": "Drive to Munnar, visit tea plantations and enjoy the scenic beauty."
+        },
+        {
+          "day": 3,
+          "title": "Munnar Sightseeing",
+          "description": "Full day exploring Munnar's attractions including Eravikulam National Park."
+        },
+        {
+          "day": 4,
+          "title": "Munnar to Alleppey",
+          "description": "Travel to Alleppey and board houseboat for overnight stay."
+        },
+        {
+          "day": 5,
+          "title": "Departure",
+          "description": "Check out from houseboat and transfer to airport for departure."
+        }
+      ],
+      "includes": [
+        "Accommodation",
+        "All Meals",
+        "Transportation",
+        "Guide",
+        "Entry Fees"
+      ],
+      "excludes": ["Airfare", "Personal Expenses", "Tips"]
+    },
+    {
+      "id": "local-2",
+      "title": "Goa Beach Holiday",
+      "location": "North Goa • South Goa",
+      "duration": "4 Days / 3 Nights",
+      "price": 399,
+      "originalPrice": 599,
+      "rating": 4.5,
+      "reviews": 156,
+      "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "description": "Relax on pristine beaches, enjoy water sports, and experience Goa's vibrant nightlife.",
+      "features": [
+        "Beach Resorts",
+        "Water Sports",
+        "Nightlife",
+        "Local Tours",
+        "Airport Transfers",
+        "Professional Guide"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Goa",
+          "description": "Arrive at Goa airport, check into beach resort, relax on the beach."
+        },
+        {
+          "day": 2,
+          "title": "North Goa Exploration",
+          "description": "Visit Calangute, Baga beaches, and explore local markets."
+        },
+        {
+          "day": 3,
+          "title": "South Goa Tour",
+          "description": "Explore Palolem beach, visit spice plantations, and enjoy sunset cruise."
+        },
+        {
+          "day": 4,
+          "title": "Departure",
+          "description": "Free time for shopping and departure transfer to airport."
+        }
+      ],
+      "includes": [
+        "Beach Resort",
+        "Breakfast",
+        "Airport Transfers",
+        "Sightseeing",
+        "Water Sports"
+      ],
+      "excludes": ["Lunch & Dinner", "Airfare", "Personal Expenses", "Alcohol"]
+    }
+  ],
+  "international": [
+    {
+      "id": "intl-1",
+      "title": "Golden Triangle India",
+      "location": "Delhi • Agra • Jaipur",
+      "duration": "7 Days / 6 Nights",
+      "price": 899,
+      "originalPrice": 1299,
+      "rating": 4.8,
+      "reviews": 245,
+      "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "description": "Explore India's most iconic destinations including the Taj Mahal, Red Fort, and Amber Palace.",
+      "features": [
+        "UNESCO World Heritage Sites",
+        "Taj Mahal Visit",
+        "Local Guide Included",
+        "All Meals",
+        "4-Star Hotels",
+        "Private Transportation"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Delhi",
+          "description": "Arrive at Delhi airport, check into hotel, and evening orientation."
+        },
+        {
+          "day": 2,
+          "title": "Delhi Sightseeing",
+          "description": "Full day exploring Red Fort, India Gate, Humayun's Tomb, and local markets."
+        },
+        {
+          "day": 3,
+          "title": "Delhi to Agra",
+          "description": "Drive to Agra, visit Taj Mahal at sunset, and explore Agra Fort."
+        },
+        {
+          "day": 4,
+          "title": "Agra to Jaipur",
+          "description": "Morning visit to Taj Mahal at sunrise, then drive to Jaipur via Fatehpur Sikri."
+        },
+        {
+          "day": 5,
+          "title": "Jaipur Sightseeing",
+          "description": "Visit Amber Palace, City Palace, Hawa Mahal, and local bazaars."
+        },
+        {
+          "day": 6,
+          "title": "Jaipur to Delhi",
+          "description": "Drive back to Delhi, last-minute shopping, and evening at leisure."
+        },
+        {
+          "day": 7,
+          "title": "Departure",
+          "description": "Transfer to airport for international departure."
+        }
+      ],
+      "includes": [
+        "4-Star Hotels",
+        "All Meals",
+        "Private Car",
+        "Professional Guide",
+        "Entry Fees",
+        "Airport Transfers"
+      ],
+      "excludes": [
+        "International Flights",
+        "Visa Fees",
+        "Personal Expenses",
+        "Tips"
+      ]
+    },
+    {
+      "id": "intl-2",
+      "title": "Swiss Alps Adventure",
+      "location": "Zurich • Interlaken • Zermatt",
+      "duration": "10 Days / 9 Nights",
+      "price": 2499,
+      "originalPrice": 2999,
+      "rating": 4.9,
+      "reviews": 189,
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "description": "Experience the breathtaking Swiss Alps with scenic train rides, mountain adventures, and luxury accommodations.",
+      "features": [
+        "Mountain Railways",
+        "Scenic Views",
+        "Adventure Sports",
+        "Luxury Hotels",
+        "Swiss Pass",
+        "Professional Guide"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Zurich",
+          "description": "Arrive at Zurich airport, city tour, and check into hotel."
+        },
+        {
+          "day": 2,
+          "title": "Zurich to Lucerne",
+          "description": "Travel to Lucerne, visit Chapel Bridge and enjoy lake cruise."
+        },
+        {
+          "day": 3,
+          "title": "Mount Pilatus Excursion",
+          "description": "Cable car ride to Mount Pilatus, panoramic views, and alpine activities."
+        },
+        {
+          "day": 4,
+          "title": "Lucerne to Interlaken",
+          "description": "Scenic train journey to Interlaken, check into mountain resort."
+        },
+        {
+          "day": 5,
+          "title": "Jungfraujoch - Top of Europe",
+          "description": "Full day excursion to Jungfraujoch, highest railway station in Europe."
+        },
+        {
+          "day": 6,
+          "title": "Adventure Activities",
+          "description": "Paragliding, hiking, or skiing (seasonal) in the Bernese Oberland."
+        },
+        {
+          "day": 7,
+          "title": "Interlaken to Zermatt",
+          "description": "Travel to Zermatt, Switzerland's most famous ski resort."
+        },
+        {
+          "day": 8,
+          "title": "Matterhorn Experience",
+          "description": "Cable car to Matterhorn Glacier Paradise, stunning mountain views."
+        },
+        {
+          "day": 9,
+          "title": "Zermatt to Zurich",
+          "description": "Return journey to Zurich, evening at leisure."
+        },
+        {
+          "day": 10,
+          "title": "Departure",
+          "description": "Transfer to airport for international departure."
+        }
+      ],
+      "includes": [
+        "Luxury Hotels",
+        "Swiss Travel Pass",
+        "All Breakfasts",
+        "Mountain Excursions",
+        "Professional Guide",
+        "Airport Transfers"
+      ],
+      "excludes": [
+        "International Flights",
+        "Lunches & Dinners",
+        "Personal Expenses",
+        "Travel Insurance"
+      ]
+    },
+    {
+      "id": "intl-3",
+      "title": "Bali Island Paradise",
+      "location": "Ubud • Seminyak • Nusa Dua",
+      "duration": "6 Days / 5 Nights",
+      "price": 1199,
+      "originalPrice": 1599,
+      "rating": 4.7,
+      "reviews": 312,
+      "image": "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+      "description": "Discover the cultural heart of Bali with temple visits, traditional villages, and pristine beaches.",
+      "features": [
+        "Beach Resorts",
+        "Temple Tours",
+        "Cultural Experiences",
+        "Spa Treatments",
+        "Private Transfers",
+        "Local Guide"
+      ],
+      "itinerary": [
+        {
+          "day": 1,
+          "title": "Arrival in Bali",
+          "description": "Arrive at Ngurah Rai airport, transfer to Ubud, check into resort."
+        },
+        {
+          "day": 2,
+          "title": "Ubud Cultural Tour",
+          "description": "Visit monkey forest, traditional markets, and Tegallalang rice terraces."
+        },
+        {
+          "day": 3,
+          "title": "Temple Hopping",
+          "description": "Visit Tanah Lot, Uluwatu temples, and enjoy Kecak fire dance."
+        },
+        {
+          "day": 4,
+          "title": "Move to Seminyak",
+          "description": "Transfer to Seminyak beach resort, afternoon at leisure."
+        },
+        {
+          "day": 5,
+          "title": "Beach and Spa Day",
+          "description": "Relax on Seminyak beach, traditional Balinese spa treatment."
+        },
+        {
+          "day": 6,
+          "title": "Departure",
+          "description": "Free time for shopping, transfer to airport for departure."
+        }
+      ],
+      "includes": [
+        "Beach Resorts",
+        "Daily Breakfast",
+        "Private Car",
+        "Professional Guide",
+        "Entry Fees",
+        "Spa Treatment"
+      ],
+      "excludes": [
+        "International Flights",
+        "Lunches & Dinners",
+        "Personal Expenses",
+        "Visa"
+      ]
+    }
+  ]
+}
