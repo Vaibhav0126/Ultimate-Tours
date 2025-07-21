@@ -44,9 +44,9 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      {/* Top bar */}
+      {/* Top bar - Mobile optimized */}
       <div
-        className="bg-primary-800 text-white py-2"
+        className="bg-primary-800 text-white py-2 hidden md:block"
         style={{
           backgroundImage: "url('/images/tourism7.jpg')",
         }}
@@ -69,21 +69,37 @@ export default function Header() {
         </div>
       </div>
 
+      {/* Mobile-only compact top bar */}
+      <div className="md:hidden bg-primary-800 text-white py-1.5 text-center text-xs">
+        <div className="flex items-center justify-center space-x-4">
+          <div className="flex items-center space-x-1">
+            <Phone className="h-3 w-3" />
+            <span>+91 98039-29900</span>
+          </div>
+          <div className="flex items-center space-x-1">
+            <MapPin className="h-3 w-3" />
+            <span>Serving Worldwide</span>
+          </div>
+        </div>
+      </div>
+
       {/* Main header */}
       <div className="container-max">
-        <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+        <div className="flex justify-between items-center py-3 md:py-4">
+          {/* Logo - Mobile optimized */}
+          <Link href="/" className="flex items-center space-x-2 md:space-x-3">
             <img
               src="/icons/logoT.svg"
               alt="Ultimate Tours"
-              className="h-12 w-auto"
+              className="h-8 md:h-12 w-auto"
             />
             <div>
-              <h1 className="text-2xl font-bold text-gray-800">
+              <h1 className="text-lg md:text-2xl font-bold text-gray-800">
                 Ultimate Tours
               </h1>
-              <p className="text-sm text-gray-600">Catch Your Smile</p>
+              <p className="text-xs md:text-sm text-gray-600 hidden sm:block">
+                Catch Your Smile
+              </p>
             </div>
           </Link>
 
@@ -164,15 +180,15 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Improved */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <nav className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 border-t bg-white">
+            <nav className="flex flex-col space-y-1">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary-600 font-medium py-2"
+                  className="text-gray-700 hover:text-primary-600 hover:bg-gray-50 font-medium py-3 px-2 rounded-lg transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -182,21 +198,21 @@ export default function Header() {
               {/* Mobile Authentication Section */}
               <div className="border-t pt-4 mt-4">
                 {isAuthenticated && user ? (
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-2 text-gray-700 font-medium">
+                  <div className="space-y-2">
+                    <div className="flex items-center space-x-2 text-gray-700 font-medium py-2 px-2">
                       <User className="h-5 w-5" />
-                      <span>{user.name}</span>
+                      <span className="truncate">{user.name}</span>
                     </div>
                     <Link
                       href="/profile"
-                      className="block text-gray-700 hover:text-primary-600 py-2"
+                      className="block text-gray-700 hover:text-primary-600 hover:bg-gray-50 py-3 px-2 rounded-lg transition-all duration-200"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       My Profile
                     </Link>
                     <Link
                       href="/wishlist"
-                      className="block text-gray-700 hover:text-primary-600 py-2"
+                      className="block text-gray-700 hover:text-primary-600 hover:bg-gray-50 py-3 px-2 rounded-lg transition-all duration-200"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       My Wishlist
@@ -206,7 +222,7 @@ export default function Header() {
                         handleLogout();
                         setIsMenuOpen(false);
                       }}
-                      className="flex items-center space-x-2 text-gray-700 hover:text-primary-600 py-2"
+                      className="flex items-center space-x-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 py-3 px-2 rounded-lg transition-all duration-200 w-full text-left"
                     >
                       <LogOut className="h-4 w-4" />
                       <span>Sign Out</span>
@@ -216,14 +232,14 @@ export default function Header() {
                   <div className="space-y-3">
                     <Link
                       href="/signin"
-                      className="block text-gray-700 hover:text-primary-600 font-medium py-2"
+                      className="block text-gray-700 hover:text-primary-600 hover:bg-gray-50 font-medium py-3 px-2 rounded-lg transition-all duration-200"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Sign In
                     </Link>
                     <Link
                       href="/signup"
-                      className="block bg-primary-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors duration-200 text-center"
+                      className="block bg-primary-600 text-white px-4 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors duration-200 text-center shadow-md"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Sign Up

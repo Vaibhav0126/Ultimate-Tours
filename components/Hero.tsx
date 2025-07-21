@@ -47,7 +47,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden">
+    <section className="relative bg-gradient-to-r from-primary-900 via-primary-800 to-primary-700 text-white overflow-hidden min-h-[60vh] md:min-h-[80vh]">
       {/* Sliding Background Images */}
       <div className="absolute inset-0">
         {wondersImages.map((image, index) => (
@@ -82,63 +82,69 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* Current wonder name */}
-      <div className="absolute top-6 right-6 z-20">
-        <div className="bg-black/30 backdrop-blur-sm rounded-lg px-4 py-2">
-          <p className="text-sm text-yellow-400 font-medium">
+      {/* Current wonder name - Mobile optimized */}
+      <div className="absolute top-4 md:top-6 right-4 md:right-6 z-20">
+        <div className="bg-black/30 backdrop-blur-sm rounded-lg px-2 py-1 md:px-4 md:py-2">
+          <p className="text-xs md:text-sm text-yellow-400 font-medium">
             {wondersImages[currentSlide].title}
           </p>
         </div>
       </div>
 
-      <div className="relative container-max section-padding z-10">
+      <div className="relative container-max section-padding z-10 px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 leading-tight">
             Discover the World with
             <span className="text-yellow-400"> Ultimate Tours</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-200">
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 text-gray-200 px-2">
             Your trusted partner for unforgettable travel experiences. From
             dream destinations to seamless logistics.
           </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+          {/* Stats - Mobile optimized */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-10 px-2">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6">
               <div className="flex items-center justify-center mb-2">
-                <Users className="h-8 w-8 text-yellow-400" />
+                <Users className="h-6 md:h-8 w-6 md:w-8 text-yellow-400" />
               </div>
-              <div className="text-2xl font-bold">10,000+</div>
-              <div className="text-gray-200">Happy Travelers</div>
+              <div className="text-xl md:text-2xl font-bold">10,000+</div>
+              <div className="text-gray-200 text-sm md:text-base">
+                Happy Travelers
+              </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6">
               <div className="flex items-center justify-center mb-2">
-                <MapPin className="h-8 w-8 text-yellow-400" />
+                <MapPin className="h-6 md:h-8 w-6 md:w-8 text-yellow-400" />
               </div>
-              <div className="text-2xl font-bold">150+</div>
-              <div className="text-gray-200">Destinations</div>
+              <div className="text-xl md:text-2xl font-bold">150+</div>
+              <div className="text-gray-200 text-sm md:text-base">
+                Destinations
+              </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 md:p-6">
               <div className="flex items-center justify-center mb-2">
-                <Star className="h-8 w-8 text-yellow-400" />
+                <Star className="h-6 md:h-8 w-6 md:w-8 text-yellow-400" />
               </div>
-              <div className="text-2xl font-bold">4.9/5</div>
-              <div className="text-gray-200">Customer Rating</div>
+              <div className="text-xl md:text-2xl font-bold">4.9/5</div>
+              <div className="text-gray-200 text-sm md:text-base">
+                Customer Rating
+              </div>
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* CTA Buttons - Mobile optimized */}
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center px-4">
             <Link
               href="/packages"
-              className="bg-yellow-500 text-black px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-200 flex items-center justify-center"
+              className="bg-yellow-500 text-black px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-200 flex items-center justify-center text-sm md:text-base"
             >
               Explore Tour Packages
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-4 md:h-5 w-4 md:w-5" />
             </Link>
             <Link
               href="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-800 transition-all duration-200"
+              className="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-white hover:text-primary-800 transition-all duration-200 text-sm md:text-base"
             >
               Plan Your Trip
             </Link>

@@ -38,4 +38,21 @@
   .container-max {
     @apply max-w-7xl mx-auto;
   }
+
+  /* Mobile-specific improvements */
+  @media (max-width: 768px) {
+    .section-padding {
+      @apply py-8 px-4;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .section-padding {
+      @apply py-6 px-3;
+    }
+
+    .container-max {
+      @apply px-4;
+    }
+  }
 }
