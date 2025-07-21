@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
+require("dotenv").config({ path: ".env.local" });
 
-// Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/ultimate-tours", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// Connect to MongoDB Atlas using environment variable
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost:27017/ultimate-tours",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 // Package schema
 const packageSchema = new mongoose.Schema(
