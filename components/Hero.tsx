@@ -16,11 +16,11 @@ export default function Hero() {
       title: "Machu Picchu, Peru",
     },
     {
-      url: "/images/Christ.jpg",
+      url: "/images/christ.jpg",
       title: "Christ the Redeemer, Brazil",
     },
     {
-      url: "/images/Chichen.jpg",
+      url: "/images/chichen.jpg",
       title: "Chichen Itza, Mexico",
     },
     {
