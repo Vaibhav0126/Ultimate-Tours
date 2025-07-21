@@ -64,7 +64,7 @@ _Comprehensive admin panel for managing tours and bookings_
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/ultimate-tours.git
+git clone https://github.com/Vaibhav0126/Ultimate-Tours.git
 cd ultimate-tours
 npm install
 ```
@@ -320,7 +320,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 - **Documentation**: Check the [Railway Deploy Guide](./RAILWAY_DEPLOY.md)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/ultimate-tours/issues)
+- **Issues**: [GitHub Issues](https://github.com/Vaibhav0126/Ultimate-Tours/issues)
 - **Email**: support@ultimatetours.com
 
 ---
@@ -329,10 +329,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ for travelers around the world**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/ultimate-tours)](https://github.com/yourusername/ultimate-tours/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/ultimate-tours)](https://github.com/yourusername/ultimate-tours/network)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/ultimate-tours)](https://github.com/yourusername/ultimate-tours/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Vaibhav0126/Ultimate-Tours)](https://github.com/Vaibhav0126/Ultimate-Tours/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Vaibhav0126/Ultimate-Tours)](https://github.com/Vaibhav0126/Ultimate-Tours/network)
+[![GitHub issues](https://img.shields.io/github/issues/Vaibhav0126/Ultimate-Tours)](https://github.com/Vaibhav0126/Ultimate-Tours/issues)
 
-[🌐 Live Demo](https://your-app.up.railway.app) • [📖 Documentation](./RAILWAY_DEPLOY.md) • [🐛 Report Bug](https://github.com/yourusername/ultimate-tours/issues)
+[🌐 Live Demo](https://your-app.up.railway.app) • [📖 Documentation](./RAILWAY_DEPLOY.md) • [🐛 Report Bug](https://github.com/Vaibhav0126/Ultimate-Tours/issues)
 
 </div>
