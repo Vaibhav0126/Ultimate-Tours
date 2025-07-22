@@ -26,7 +26,7 @@ export default function Services() {
     },
     {
       icon: <FileText className="h-8 w-8" />,
-      title: "VISA Services",
+      title: "Visa Services",
       description: "Hassle-free visa processing for all destinations.",
       color: "bg-purple-500",
     },

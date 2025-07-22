@@ -13,7 +13,7 @@ export default function Footer() {
   const services = [
     "Tour Packages",
     "Air Tickets",
-    "VISA Services",
+    "Visa Services",
     "Hotel Bookings",
     "Travel Insurance",
     "Railway Tickets",
@@ -126,7 +126,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Ultimate Tours. All rights reserved. | Privacy Policy | Terms
+            © 2015 Ultimate Tours. All rights reserved. | Privacy Policy | Terms
             & Conditions
           </p>
         </div>

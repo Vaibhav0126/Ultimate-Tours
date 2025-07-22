@@ -9,7 +9,7 @@ export default function AdminFooter() {
           {/* Logo and Copyright */}
           <div className="flex items-center space-x-3">
             <div className="text-sm text-gray-600">
-              © 2025 Ultimate Tours. All rights reserved.
+              © 2015 Ultimate Tours. All rights reserved.
             </div>
           </div>
 
